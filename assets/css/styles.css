@@ -154,6 +154,7 @@ button { outline: 0; }
 
 .entry-bg {
 	overflow: hidden;
+	position: relative;
 
 }
 
@@ -220,6 +221,67 @@ button { outline: 0; }
 	border: 1px solid #ff4e2e;
 }
 
+/* Tag */
+
+.tag {
+	position: absolute;
+	top: 0;
+	/* left: 30%; */
+	width: 100%;
+	height: 100%;
+}
+
+.tag__item1,
+.tag__item2,
+.tag__item3,
+.tag__item4,
+.tag__item5 {
+	position: absolute;
+	left: 35%;
+	top: 65%;
+	font-weight: 700;
+	color: transparent;
+	background: rgb(242,101,34);
+    background: linear-gradient(0deg, rgba(242,101,34,1) 0%, rgba(250,8,145,1) 100%);
+    -webkit-background-clip: text;
+    transition: transform .6s linear;
+}
+
+.tag__item1.active{
+ 	/* top: 0%;
+ 	left: 1%;
+ 	font-size: 48px; */
+ 	transform: rotate(20deg);
+}
+.tag__item2.active{
+ 	/* top: 45%;
+ 	left: 5%;
+ 	font-size: 57px; */
+ 	transform: rotate(10deg);
+
+}
+.tag__item3.active{
+ 	/* top: 80%;
+ 	left: 10%;
+ 	font-size: 40px; */
+  	transform: rotate(-25deg);
+
+}
+.tag__item4.active{
+ 	/* top: 5%;
+ 	left: 40%;
+ 	font-size: 30px; */
+  	transform: rotate(-20deg);
+
+}
+.tag__item5.active{
+ 	/* top: 60%;
+ 	left: 50%;
+ 	font-size: 38px; */
+  	transform: rotate(15deg);
+
+}
+
 /* Section */
 .section {
 	text-align: center;
@@ -261,25 +323,7 @@ button { outline: 0; }
 .works {
 	display: flex;
 	justify-content: space-between;
-	margin-bottom: 100px;
-}
-
-.works .owl-item {
-	padding: 10px;
-}
-
-.works .owl-nav {
-	/* position: absolute; */
-	/* top: 50%; */
-}
-
-.works .owl-prev i,
-.works .owl-next i{
-	color: #8993ad;
-	background-color: #fff;
-	padding: 20px;
-	border-radius: 50%;
-	font-size: 28px;
+	margin-bottom: 50px;
 }
 
 .works__item {
@@ -308,6 +352,78 @@ button { outline: 0; }
 	font-weight: 500;
 	color: #8993ad;
 	padding: 40px 0;
+}
+
+.works .owl-item {
+	padding: 10px;
+}
+
+#works .owl-prev {
+	position: absolute;
+	left: -15px;
+	top: 30%;
+}
+
+#works .owl-next {
+	/* margin-left: auto; */
+	position: absolute;
+	top: 30%;
+	right: -15px;
+}
+
+.works .owl-dots {
+	margin-top: 40px;
+}
+
+.works button.owl-dot {
+	width: 18px;
+	height: 18px;
+	border-radius: 50%;
+	background-color: #ebebeb;
+	transition: background-color .3s linear;
+	margin: 0 15px;
+}
+
+.works button.owl-dot.active {
+	background-color: #ff4e2e;
+}
+
+/* #works .owl-dot + #works .owl-dot {
+	margin-left: 30px;
+} */
+
+/* .works .owl-dot .active {
+	background-color: #ff4e2e;
+} */
+
+/* Arrow */
+
+.arrow {
+	border-top: 2px solid #8993ad;
+	border-right: 2px solid #8993ad;
+	padding: 7px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+}
+
+.arrow_left {
+ 	transform: translate3d(-30%, -50%, 0) rotateZ(-135deg);
+}
+
+.arrow_right {
+ 	transform: translate3d(-70%, -50%, 0) rotateZ(45deg);
+}
+
+.arrow-wrap {
+	/* padding: 20px; */
+	width: 60px;
+	height: 60px;
+	background-color: #fff;
+	border-radius: 50%;
+	position: relative;
+	box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.2);
+
 }
 
 /* Price */
