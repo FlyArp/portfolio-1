@@ -58,7 +58,13 @@ $(function() {
 
 	// Amimation
 	setTimeout(function() {
-		var windowsWidth = $(window).width()
+		var windowsWidth = $(window).width();
+
+		$('.tag__item1').addClass('active');
+		$('.tag__item2').addClass('active');
+		$('.tag__item3').addClass('active');
+		$('.tag__item4').addClass('active');
+		$('.tag__item5').addClass('active');
 
 		if (windowsWidth >= '975') {
 			// Item1
@@ -66,7 +72,7 @@ $(function() {
 				top: '0%', 
 				left: '1%',
 				'font-size': '48px'}, 700);
-			$('.tag__item1').addClass('active');
+			
 
 			// Item2
 			if (windowsWidth >= '1190') {
@@ -80,28 +86,28 @@ $(function() {
 					left: '5%',
 					'font-size': '57px'}, 700);
 			}
-			$('.tag__item2').addClass('active');
+			
 
 			// Item3
 			$('.tag__item3').animate({
 				top: '87%', 
 				left: '10%',
 				'font-size': '40px'}, 700);
-			$('.tag__item3').addClass('active');
+			
 
 			// Item4
 			$('.tag__item4').animate({
 				top: '5%', 
 				left: '40%',
 				'font-size': '30px'}, 700);
-			$('.tag__item4').addClass('active');
+			
 
 			// Item5
 			$('.tag__item5').animate({
 				top: '67%', 
 				left: '42%',
 				'font-size': '38px'}, 700);
-			$('.tag__item5').addClass('active');
+			
 
 		} else if (windowsWidth >= '751') {
 			// Item1
@@ -109,28 +115,24 @@ $(function() {
 				top: '0%', 
 				left: '8%',
 				'font-size': '39px'}, 700);
-			$('.tag__item1').addClass('active');
 
 			// Item2
 			$('.tag__item2').animate({
 				top: '90%', 
 				left: '4%',
 				'font-size': '45px'}, 700);
-			$('.tag__item2').addClass('active');
 
 			// Item3
 			$('.tag__item3').animate({
 				top: '87%', 
 				left: '30%',
 				'font-size': '32px'}, 700);
-			$('.tag__item3').addClass('active');
 
 			// Item4
 			$('.tag__item4').animate({
 				top: '10%', 
 				left: '44%',
 				'font-size': '30px'}, 700);
-			$('.tag__item4').addClass('active');
 
 			// Item5
 			$('.tag__item5').css({display: 'none'});
@@ -141,21 +143,18 @@ $(function() {
 				top: '0%', 
 				left: '8%',
 				'font-size': '39px'}, 700);
-			$('.tag__item1').addClass('active');
 
 			// Item2
 			$('.tag__item2').animate({
 				top: '16%', 
 				left: '3%',
 				'font-size': '45px'}, 700);
-			$('.tag__item2').addClass('active');
 
 			// Item3
 			$('.tag__item3').animate({
 				top: '3%', 
 				left: '68%',
 				'font-size': '32px'}, 700);
-			$('.tag__item3').addClass('active');
 			$('.tag__item3').css({color: '#fff'});
 
 			// Item4
@@ -163,7 +162,6 @@ $(function() {
 				top: '18%', 
 				left: '73%',
 				'font-size': '30px'}, 700);
-			$('.tag__item4').addClass('active');
 			$('.tag__item4').css({color: '#fff'});
 
 			// Item5
@@ -174,28 +172,24 @@ $(function() {
 				top: '0%', 
 				left: '8%',
 				'font-size': '31px'}, 700);
-			$('.tag__item1').addClass('active');
 
 			// Item2
 			$('.tag__item2').animate({
 				top: '16%', 
 				left: '3%',
 				'font-size': '37px'}, 700);
-			$('.tag__item2').addClass('active');
 
 			// Item3
 			$('.tag__item3').animate({
 				top: '0%', 
 				left: '63%',
 				'font-size': '24px'}, 700);
-			$('.tag__item3').addClass('active');
 
 			// Item4
 			$('.tag__item4').animate({
 				top: '13%', 
 				left: '73%',
 				'font-size': '23px'}, 700);
-			$('.tag__item4').addClass('active');
 			$('.tag__item4').css({color: '#fff'});
 
 			// Item5
